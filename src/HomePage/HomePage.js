@@ -26,9 +26,14 @@ const HomePage = () => {
     return (
 
         <div className='my-10'>
+
+{
+
+}
+
             <form onSubmit={inputForm} className='mb-10' action="">
                 <input name='inputField' type="text" placeholder="Type here" className="input-bordered input w-full max-w-xs" />
-                <button className="btn btn-accent">Button</button>
+                <button className="btn btn-accent">Search</button>
             </form>
             <div className='grid grid-cols-4 gap-7 px-10'>
 
