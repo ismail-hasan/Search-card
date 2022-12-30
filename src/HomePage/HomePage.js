@@ -27,9 +27,7 @@ const HomePage = () => {
 
         <div className='my-10'>
 
-{
 
-}
 
             <form onSubmit={inputForm} className='mb-10' action="">
                 <input name='inputField' type="text" placeholder="Type here" className="input-bordered input w-full max-w-xs" />
@@ -37,7 +35,10 @@ const HomePage = () => {
             </form>
             <div className='grid grid-cols-4 gap-7 px-10'>
 
+                {datas.length === 0 &&
+                    <h1 className='text-4xl'>No Data Found</h1>
 
+                }
 
                 {
                     datas.map(data => {
